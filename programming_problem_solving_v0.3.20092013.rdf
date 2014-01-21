@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xml:base="http://jrenelg.com/files/mitc/tesis/vocabulary/pps" xmlns="http://jrenelg.com/files/mitc/tesis/vocabulary/pps#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dctype="http://purl.org/dc/dcmitype/" xmlns:gov="http://www.oegov.org/core/owl/gov#" xmlns:loc="http://purl.org/ctic/infraestructuras/localizacion#" xmlns:ovoc="http://open.vocab.org/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:vann="http://purl.org/vocab/vann/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	<owl:Ontology rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/pps">
+		<!-- **************************** La información sobre el esquema ****************************** -->
+		<!-- La URI de la versión del esquema -->
+		<dc:identifier>http://jrenelg.com/files/mitc/tesis/vocabulary/pps</dc:identifier>
+		<dc:date>2013-11-20</dc:date>
+		<dc:title xml:lang="en">Programming Problem Solving</dc:title>
+		<dc:title xml:lang="es">Soluciones a problemas de programación</dc:title>
+		<rdfs:comment xml:lang="en">Vocabulary of data schema that models the resources needed to solve programming problems.</rdfs:comment>
+		<rdfs:comment xml:lang="es">Vocabulario que proporciona un modelo para la descripción de los recursos para resolver problemas de programación.</rdfs:comment>
+		<dcterms:isVersionOf rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<dc:creator>Universidad Autonoma de Aguascalientes</dc:creator>
+		<dc:creator>Julio René López Guerrero P. Eng.</dc:creator>
+		<dc:creator>Carlos Argelio Arévalo Mercado Ph. D.</dc:creator>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/3.0/es"/>
+		<dc:rights>Creative Commons</dc:rights>
+		<ovoc:image rdf:resource="PPS_v0.3.20112013.jpg"/>
+		<!-- En las actualizaciones, indica que se reemplaza el documento anterior -->
+		<vann:preferredNamespaceUri>http://jrenelg.com/files/mitc/tesis/vocabulary/pps#</vann:preferredNamespaceUri>
+		<vann:preferredNamespacePrefix>pps</vann:preferredNamespacePrefix>
+		<!-- El formato del documento HTML -->
+		<dcterms:hasFormat>
+			<dctype:Text rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/programming_problem_solving_v0.3.20112013.html">
+				<dc:format>
+					<dcterms:IMT>
+						<rdf:value>text/html</rdf:value>
+						<rdfs:label xml:lang="en">HTML</rdfs:label>
+					</dcterms:IMT>
+				</dc:format>
+			</dctype:Text>
+		</dcterms:hasFormat>
+		<!-- El formato del documento RDF -->
+		<dcterms:hasFormat>
+			<dctype:Text rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/programming_problem_solving_v0.3.20112013.rdf">
+				<dc:format>
+					<dcterms:IMT>
+						<rdf:value>application/rdf+xml</rdf:value>
+						<rdfs:label xml:lang="en">RDF</rdfs:label>
+					</dcterms:IMT>
+				</dc:format>
+			</dctype:Text>
+		</dcterms:hasFormat>
+	</owl:Ontology>
+	<!-- Programming Problem -->
+	<rdfs:Class rdf:about="#Problem">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">Programming problem</rdfs:label>
+		<rdfs:label xml:lang="en">Problema de programación</rdfs:label>
+		<rdfs:comment xml:lang="en">is any programming problem that help us on learning</rdfs:comment>
+		<rdfs:comment xml:lang="es">Es un problema de programación que nos ayuda en el aprendizaje </rdfs:comment>
+		<skos:definition xml:lang="en">Programming Problem</skos:definition>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+	</rdfs:Class>
+	<!-- Solution -->
+	<rdfs:Class rdf:about="#Solution">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">a programming problem solution</rdfs:label>
+		<rdfs:label xml:lang="es">Solución a un problema de programación</rdfs:label>
+		<rdfs:comment xml:lang="en">a way of to solve a programming problem is named Protocol too</rdfs:comment>
+		<rdfs:comment xml:lang="es">Una forma de resolver un problema de programación se denomina Protocolo también</rdfs:comment>
+		<skos:definition xml:lang="en">a programming problem solution.</skos:definition>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+		<rdfs:subClassOf rdf:resource="#Problem"/>
+	</rdfs:Class>
+	<!-- Solver  -->
+	<rdfs:Class rdf:about="#Solver">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">Problem Solver</rdfs:label>
+		<rdfs:label xml:lang="es">Solucionador de problemas</rdfs:label>
+		<rdfs:comment xml:lang="en">Person that give a solution</rdfs:comment>
+		<rdfs:comment xml:lang="es">Persona que proporciona una solución</rdfs:comment>
+		<skos:definition>Programmer problem solver</skos:definition>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+		<rdfs:subClassOf rdf:resource="#Solution"/>
+	</rdfs:Class>
+	<!-- Step-->
+	<rdfs:Class rdf:about="#Step">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">A step in the solution</rdfs:label>
+		<rdfs:label xml:lang="es">Un paso en la solución</rdfs:label>
+		<rdfs:comment xml:lang="en">A  step in the solution of a problem</rdfs:comment>
+		<rdfs:comment xml:lang="es">Un paso en la solución de un problema</rdfs:comment>
+		<skos:definition xml:lang="en"> step in the solution of a problem</skos:definition>
+		<rdfs:label xml:lang="en">A step in the solution</rdfs:label>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+		<rdfs:subClassOf rdf:resource="#Solution"/>
+	</rdfs:Class>
+	<!-- Propiedades propias de la ontología -->
+	<!-- ******************************************************************************************* -->
+	<!-- Programming category-->
+	<rdf:Property rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/pps#category">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">Programming category</rdfs:label>
+		<rdfs:label xml:lang="es">Categoría de Programación</rdfs:label>
+		<rdfs:comment xml:lang="en">Programming category</rdfs:comment>
+		<rdfs:comment xml:lang="es">Categoría de Programación</rdfs:comment>
+		<skos:definition xml:lang="en">Programming category</skos:definition>
+		<rdfs:domain rdf:resource="#Problem"/>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+	</rdf:Property>
+	<!-- Problem title-->
+	<rdf:Property rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/pps#title">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">Title</rdfs:label>
+		<rdfs:label xml:lang="es">Titulo</rdfs:label>
+		<rdfs:comment xml:lang="en">Problem title </rdfs:comment>
+		<rdfs:comment xml:lang="es">Titulo del problema </rdfs:comment>
+		<skos:definition xml:lang="en">Problem title</skos:definition>
+		<rdfs:domain rdf:resource="#Problem"/>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+	</rdf:Property>
+	<!-- Problem description -->
+	<rdf:Property rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/pps#description">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">Description</rdfs:label>
+		<rdfs:label xml:lang="es">Descripción </rdfs:label>
+		<rdfs:comment xml:lang="en">Problem Description </rdfs:comment>
+		<rdfs:comment xml:lang="es">Descripción del problema</rdfs:comment>
+		<skos:definition xml:lang="en">Problem Description</skos:definition>
+		<rdfs:domain rdf:resource="#Problem"/>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+	</rdf:Property>
+	<!-- Problem difficulty level  -->
+	<rdf:Property rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/pps#difficulty">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">Difficulty level</rdfs:label>
+		<rdfs:label xml:lang="es">Nivel de dificultad</rdfs:label>	
+		<rdfs:comment xml:lang="en">Problem difficulty level  </rdfs:comment>
+		<rdfs:comment xml:lang="es">Nivel de dificultad del problema</rdfs:comment>
+		<skos:definition xml:lang="en">Problem difficulty level </skos:definition>
+		<rdfs:domain rdf:resource="#Problem"/>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+	</rdf:Property>
+	<!-- Programming Language -->
+	<rdf:Property rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/pps#language">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">Programming Language</rdfs:label>
+		<rdfs:label xml:lang="es">Lenguaje de programación</rdfs:label>
+		<rdfs:comment xml:lang="en">Programming Language</rdfs:comment>
+		<rdfs:comment xml:lang="es">Lenguaje de programación de la solución</rdfs:comment>
+		<skos:definition xml:lang="en">Programming Language</skos:definition>
+		<rdfs:domain rdf:resource="#Solution"/>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+	</rdf:Property>
+	<!-- Strategy description -->
+	<rdf:Property rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/pps#strategy">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">Strategy description</rdfs:label>
+		<rdfs:label xml:lang="es">Descripción de la estrategia</rdfs:label>
+		<rdfs:comment xml:lang="en">strategy description for solve a programming problem </rdfs:comment>
+		<rdfs:comment xml:lang="es">Descripción de la estrategia para solucionar un problema de programación.</rdfs:comment>
+		<skos:definition xml:lang="en">strategy description for solve a programming problem </skos:definition>
+		<rdfs:domain rdf:resource="#Solution"/>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+	</rdf:Property>
+	<!-- Status -->
+	<rdf:Property rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/pps#status">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">Status</rdfs:label>
+		<rdfs:label xml:lang="es">Estatus</rdfs:label>
+		<rdfs:comment xml:lang="en">Solve status</rdfs:comment>
+		<rdfs:comment xml:lang="es">Estatus de la solución</rdfs:comment>
+		<skos:definition xml:lang="en"> status of programming problem solve </skos:definition>
+		<rdfs:domain rdf:resource="#Solution"/>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+	</rdf:Property>
+	<!-- Step description -->
+	<rdf:Property rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/pps#description">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">Step description</rdfs:label>
+		<rdfs:label xml:lang="es">Descripción del paso</rdfs:label>
+		<rdfs:comment xml:lang="en">step description of the solve</rdfs:comment>
+		<rdfs:comment xml:lang="es">Descripción del un paso de la solución</rdfs:comment>
+		<skos:definition xml:lang="en"> step description of the solve </skos:definition>
+		<rdfs:domain rdf:resource="#Step"/>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+	</rdf:Property>
+	<!-- Step sequence -->
+	<rdf:Property rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/pps#sequence">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">Step sequence</rdfs:label>
+		<rdfs:label xml:lang="es">Secuencia del paso</rdfs:label>
+		<rdfs:comment xml:lang="en">step sequence of the solve</rdfs:comment>
+		<rdfs:comment xml:lang="es">Secuencia del paso en la solución</rdfs:comment>
+		<skos:definition xml:lang="en"> step sequence of the solve </skos:definition>
+		<rdfs:domain rdf:resource="#Step"/>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+	</rdf:Property>
+	<!-- Video -->
+	<rdf:Property rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/pps#video">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">Video</rdfs:label>
+		<rdfs:label  xml:lang="es">Video</rdfs:label>
+		<rdfs:comment  xml:lang="en">solve' step video</rdfs:comment>
+		<rdfs:comment  xml:lang="es">Video del paso</rdfs:comment>
+		<skos:definition xml:lang="en"> video of step solve </skos:definition>
+		<rdfs:domain rdf:resource="#Step"/>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+	</rdf:Property>
+	<!-- Metacognitive -->
+	<rdf:Property rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/pps#metacognitive">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">Metacognitive</rdfs:label>
+		<rdfs:label xml:lang="es">Metacognitivo</rdfs:label>
+		<rdfs:comment xml:lang="en">the step is metacognitive</rdfs:comment>
+		<rdfs:comment xml:lang="es">El paso es metacognitivo</rdfs:comment>
+		<skos:definition xml:lang="en">the step is metacognitive</skos:definition>
+		<rdfs:domain rdf:resource="#Step"/>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+	</rdf:Property>
+	<!-- Name -->
+	<rdf:Property rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/pps#name">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">Name</rdfs:label>
+		<rdfs:label xml:lang="es">Nombre</rdfs:label>
+		<rdfs:comment xml:lang="en">Problem Solver Name</rdfs:comment>
+		<rdfs:comment xml:lang="es">Nombre del solucionador del problema</rdfs:comment>
+		<skos:definition xml:lang="en">Problem Solver Name</skos:definition>
+		<rdfs:domain rdf:resource="#Solver"/>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+	</rdf:Property>
+	<!-- Nick -->
+	<rdf:Property rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/pps#nick">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">Nick</rdfs:label>
+		<rdfs:label xml:lang="es">Nick</rdfs:label>
+		<rdfs:comment xml:lang="en">Problem Solver Nick</rdfs:comment>
+		<rdfs:comment xml:lang="es">Nick del solucionador del problema</rdfs:comment>
+		<skos:definition xml:lang="en">Problem Solver Nick</skos:definition>
+		<rdfs:domain rdf:resource="#Solver"/>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+	</rdf:Property>
+	<!-- Mail -->
+	<rdf:Property rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/pps#mail">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">Mail</rdfs:label>
+		<rdfs:label xml:lang="es">Correo electrónico</rdfs:label>
+		<rdfs:comment xml:lang="en">Problem Solver Mail</rdfs:comment>
+		<rdfs:comment xml:lang="es">Correo electrónico del solucionador de problemas</rdfs:comment>
+		<skos:definition xml:lang="en">Problem Solver Mail</skos:definition>
+		<rdfs:domain rdf:resource="#Solver"/>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+	</rdf:Property>
+	<!-- Institution -->
+	<rdf:Property rdf:about="http://jrenelg.com/files/mitc/tesis/vocabulary/pps#institution">
+		<rdfs:isDefinedBy rdf:resource="http://jrenelg.com/files/mitc/tesis/vocabulary/pps"/>
+		<rdfs:label xml:lang="en">Institution</rdfs:label>
+		<rdfs:label xml:lang="es">Institución</rdfs:label>
+		<rdfs:comment xml:lang="en">Problem Solver Institution</rdfs:comment>
+		<rdfs:comment xml:lang="es">Institución del solucionador de problemas.</rdfs:comment>
+		<skos:definition xml:lang="en">Problem Solver Institution</skos:definition>
+		<rdfs:domain rdf:resource="#Solver"/>
+		<dcterms:issued>2013-11-20</dcterms:issued>
+	</rdf:Property>
+</rdf:RDF>
