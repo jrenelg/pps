@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:pps="http://jrenelg.com/files/mitc/tesis/vocabulary/pps#"
+         xmlns:dce="http://purl.org/dc/elements/1.1#"
+         xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:aiiso="http://purl.org/vocab/aiiso/schema#"
+         xmlns:nfo="http://www.semanticdesktop.org/ontologies/nfo#">
+
+  <pps:Problem rdf:about="http://aprende.igualproject.org/protocols/?cont=problem&amp;action=search_by_difficulty_level&amp;field=probId&amp;param=2">
+    <dce:title>sumas pares e impares</dce:title>
+    <dce:description>Escribir un programa en Lenguaje C que al recibir como dato N numeros enteros obtenga la suma de los numeros pares y el promedio de los impares.</dce:description>
+    <pps:category>ciclos</pps:category>
+    <pps:difficulty>muy facil</pps:difficulty>
+    <pps:hasSolution>
+      <pps:Solution rdf:about="http://aprende.igualproject.org/protocols/?cont=protocol&amp;action=igualPlayer&amp;protId=10">
+        <pps:strategy>Se usa una estructura de decision dentro de un ciclo. Para distinguir entre pares e impares se usa el operador % (residuo de una division).</pps:strategy>
+        <pps:status>ejemplo resuelto</pps:status>
+        <pps:language>c++</pps:language>
+        <pps:hasSolver>
+          <pps:Solver rdf:about="http://aprende.igualproject.org/protocols/?cont=cuser&amp;action=view&amp;oper=Mod&amp;id=3">
+            <vcard:nickname>liz</vcard:nickname>
+            <foaf:nick>liz</foaf:nick>
+            <foaf:name>lizbeth muñoz andrade</foaf:name>
+            <foaf:mbox>elmunoz@correo.uaa.mx</foaf:mbox>
+            <vcard:Email rdf:resource="mailto: elmunoz@correo.uaa.mx"/>
+            <aiiso:Institution rdf:resource="http://www.uaa.mx/"/>
+          </pps:Solver>
+        </pps:hasSolver>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11331">
+            <dce:description>Lo primero que se hace es definir las librerías del programa test</dce:description>
+            <pps:sequence>1</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim000.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11332">
+            <dce:description>La primer libreria va a ser el STDIO</dce:description>
+            <pps:sequence>2</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim001.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11333">
+            <dce:description>Porque aqui se encuentran almacenadas las funciones principales [de entrada y de salida] que vienen siendo el printf y el scanf</dce:description>
+            <pps:sequence>3</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim00X.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11334">
+            <dce:description>Otra librería que podemos usar es la CONIO, porque aquí están almacenadas las instrucciones que le indican al sistema operativo que limpie la pantalla o detenga la pantalla para poder ver resultados</dce:description>
+            <pps:sequence>4</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim002.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11335">
+            <dce:description>Después se declara la función main que es la encargada de realizar el proceso o ejecución del programa</dce:description>
+            <pps:sequence>5</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim003.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11336">
+            <dce:description>Empiezo declarando una variable N que va a ser de tipo entero y la voy a inicializar en 0, porque aun no se cuantos valores va a tener esa variable</dce:description>
+            <pps:sequence>6</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim004.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11337">
+            <dce:description>Tengo la variable suma, que tambien es de tipo entero y que tambien vale 0 porque no le hemos almacenado valor.</dce:description>
+            <pps:sequence>7</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim005.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11338">
+            <dce:description>Al igual [que la variable] promedio. Pero promedio debe ser de tipo flotante, porque el promedio seria la suma entre el total de números. Entonces al momento de dividir, todo valor que se divida o guarde el valor de una operación de división debe ser de tipo flotante. Aunque se divida un entero entre un entero y el resultado sea entero, siempre se debe guardar en una variable de tipo flotante.</dce:description>
+            <pps:sequence>8</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim006.flv"/>
+            <pps:metacognitive>predicción</pps:metacognitive>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11339">
+            <dce:description>Entonces ya tengo declaradas las variables N y suma de tipo entero y la variable promedio de tipo flotante</dce:description>
+            <pps:sequence>9</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim007.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11340">
+            <dce:description>Una vez que se declaran las variables, entonces lo que tengo que hacer ahora es capturar sus valores.Voy a preguntar con un printf cuanto vale N, para saber cuantos números voy a capturar</dce:description>
+            <pps:sequence>10</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim008.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11341">
+            <dce:description>Cuando sabes la cantidad de números que vas a capturar (N), lo que sigue es hacer un ciclo. Ese ciclo se va a repetir las (N) veces que pidió el usuario. Si N vale 10, el ciclo lo que va a hacer es repetir 10 veces las instrucciones que yo tenga ahí, en lugar de escribir 10 veces dame un numero, dame un numero..</dce:description>
+            <pps:sequence>11</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim010.flv"/>
+            <pps:metacognitive>estrategia (uso de ciclos)</pps:metacognitive>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11342">
+            <dce:description>Va a ser un ciclo que va a empezar en 1 y va terminar en 10</dce:description>
+            <pps:sequence>12</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim011.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11343">
+            <dce:description>Y dentro de ese ciclo necesito pedir los números. Uno por uno. Aquí le voy a pedir Introduce el numero, y lo que podemos hacer es esto: ponerle que me de el numero i. i es el contador del ciclo.</dce:description>
+            <pps:sequence>13</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim012.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11344">
+            <dce:description>Lo que el usuario va a ver en pantalla va a ser: introduce el numero 1, introduce el numero 2, introduce el numero 3, etc.</dce:description>
+            <pps:sequence>14</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim013.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11345">
+            <dce:description>Y luego vamos a leer el numero. Para leer el numero usamos un scanf, y lo vamos a guardar en una variable (que falta declarar) que va a ser numero.N es la que me guarda el total de números, pero necesito una que se llame numero, para almacenar el numero que estoy capturando.</dce:description>
+            <pps:sequence>15</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim014.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11346">
+            <dce:description>Veo que me falta declarar la variable i, que es el contador del ciclo.</dce:description>
+            <pps:sequence>16</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim016.flv"/>
+            <pps:metacognitive>monitoreo (correción de errores)</pps:metacognitive>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11347">
+            <dce:description>Entonces aquí le voy a poner numero</dce:description>
+            <pps:sequence>17</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim017.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11348">
+            <dce:description>Y ahora, veo que el problema dice que necesito la suma de los pares y el promedio de los impares.(Ver la redacción del problema)</dce:description>
+            <pps:sequence>18</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim018.flv"/>
+            <pps:metacognitive>revisión del problema</pps:metacognitive>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11349">
+            <dce:description>Por lo que voy a manejar la variable suma como acumulador. Es decir, la variable suma va a servir para acumularme el total de numeros.</dce:description>
+            <pps:sequence>19</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim019.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11350">
+            <dce:description>Aqu?? voy a poner, suma=suma + numero, de tal manera que se van acumulando todos los números ahí. Y con eso tengo la suma de los números. Cuando una variable se usa de esta forma, se le llama ACUMULADOR</dce:description>
+            <pps:sequence>20</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim020.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11351">
+            <dce:description>Pero el problema dice que la suma es de los pares, por lo que antes tengo que saber si el numero es par o es impar.</dce:description>
+            <pps:sequence>21</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim021.flv"/>
+            <pps:metacognitive>revisión del problema</pps:metacognitive>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11352">
+            <dce:description>Entonces, para saber si un numero es par, ya sabemos que al dividir un numero entre dos, si el residuo da cero, ese numero es par.</dce:description>
+            <pps:sequence>22</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim022.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11353">
+            <dce:description>Si el numero que acabas de capturar, modulo 2 (es decir, usamos el operador % para saber el residuo de la división), es igual a 0, significa que ese numero es par. Y si es par, según el problema, lo debo sumar.</dce:description>
+            <pps:sequence>23</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim023.flv"/>
+            <pps:metacognitive>punto focal</pps:metacognitive>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11354">
+            <dce:description>Y si no, si su modulo no es igual a cero, entonces es impar. Y por lo tanto, según el problema, debo sacar el promedio.</dce:description>
+            <pps:sequence>24</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim024.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11355">
+            <dce:description>Veo que necesito otra variable que guarde la suma de los impares. Le voy a poner sumaImpar.</dce:description>
+            <pps:sequence>25</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim025.flv"/>
+            <pps:metacognitive>monitoreo (correción de errores)</pps:metacognitive>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11356">
+            <dce:description>Otra forma de poner el acumulador es poniéndolo así += en lugar de =</dce:description>
+            <pps:sequence>26</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim026.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11357">
+            <dce:description>Esto es lo mismo que poner sumaImpar = sumaImpar + numero</dce:description>
+            <pps:sequence>27</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim027.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11358">
+            <dce:description>Y aquí me falta declarar la variable sumaImpar, igual a cero</dce:description>
+            <pps:sequence>28</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim028.flv"/>
+            <pps:metacognitive>monitoreo (corrección de errores)</pps:metacognitive>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11359">
+            <dce:description>Muy bien, si el numero es par acumulo en la variable suma y si es impar, se acumula en sumaImpar.</dce:description>
+            <pps:sequence>29</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim029.flv"/>
+            <pps:metacognitive>punto focal</pps:metacognitive>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11360">
+            <dce:description>cierro el ciclo for..y esto se va a repetir 10 veces.</dce:description>
+            <pps:sequence>30</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim030.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11361">
+            <dce:description>Cuando haya terminado de capturar todos los números (que veo que en realidad es el valor de la variable N)...</dce:description>
+            <pps:sequence>31</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim031.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11362">
+            <dce:description>..entonces voy a mostrar los resultados con un printf..</dce:description>
+            <pps:sequence>32</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim032.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11363">
+            <dce:description>...vamos a mostrar aquí La suma de los pares es: y ponemos ahí la variable suma.</dce:description>
+            <pps:sequence>33</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim033.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11364">
+            <dce:description>Y como también nos pidieron el promedio, le voy a poner El promedio, de los impares es y necesito poner aquí el promedio.</dce:description>
+            <pps:sequence>34</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim034.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11365">
+            <dce:description>Pero me acabo de dar cuenta que me falta algo...</dce:description>
+            <pps:sequence>35</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim035.flv"/>
+            <pps:metacognitive>monitoreo (corrección de errores)</pps:metacognitive>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11366">
+            <dce:description>Aquí yo ya sumé los impares, pero nunca conté cuantos impares hay. Porque para sacar el promedio tengo que saber la suma y dividirla entre la cantidad de impares....y nunca conté cuantos impares había, solamente los fui sumando.</dce:description>
+            <pps:sequence>36</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim036.flv"/>
+            <pps:metacognitive>monitoreo (corrección de errores)</pps:metacognitive>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11367">
+            <dce:description>Así que aquí voy a poner un contador..</dce:description>
+            <pps:sequence>37</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim037.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11368">
+            <dce:description>Y como tengo más de dos instrucciones en un else, se deben poner llaves. Una sola instrucción no requiere llaves, mas de una si.</dce:description>
+            <pps:sequence>38</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim038.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11369">
+            <dce:description>Igual podría ser primero sumar y luego contar. Aquí no hay problema donde lo pongas</dce:description>
+            <pps:sequence>39</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim040.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11370">
+            <dce:description>Ahora aquí va a ser una %f porque voy a mostrar un valor que es el resultado de una división (un numero con decimales)</dce:description>
+            <pps:sequence>40</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim042.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11371">
+            <dce:description>Entonces seria...promedio igual a la suma de los impares entre el total de impares que hubo</dce:description>
+            <pps:sequence>41</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim043.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11372">
+            <dce:description>Y ahora si, aquí podemos mostrar el promedio de los impares</dce:description>
+            <pps:sequence>42</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim044.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11373">
+            <dce:description>Después ponemos un getch() que es una instrucción que sirve para que se detenga la pantalla. Por eso se pone la librería conio.h al principio del programa</dce:description>
+            <pps:sequence>43</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim045.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11374">
+            <dce:description>Y la instrucción return 0, que le indica al compilador que ahí termina la función main. Tenemos que cerrar las llaves de la función main también. Y ahí termina el programa.</dce:description>
+            <pps:sequence>44</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim046.flv"/>
+          </pps:Step>
+        </pps:hasStep>
+
+        <pps:hasStep>
+          <pps:Step rdf:about="http://aprende.igualproject.org/protocols/?cont=verbalization_step&amp;action=view&amp;oper=Mod&amp;opervs=Mod&amp;idp=10&amp;id=11375">
+            <dce:description>Si probamos el programa con 5 números y damos los valores 1,2,3,4,5...vemos que la suma de los pares (2 y 4) da 6 y el promedio de los impares (1, 3, 5) da 3. Es decir (1+3+5) / 3. Podemos ver entonces que los resultados son correctos. Fin del ejercicio!</dce:description>
+            <pps:sequence>45</pps:sequence>
+            <nfo:Video rdf:resource="http://aprende.igualproject.org/protocols/content/video/prot_10/anim049.flv"/>
+            <pps:metacognitive>solución del problema</pps:metacognitive>
+          </pps:Step>
+        </pps:hasStep>
+
+      </pps:Solution>
+    </pps:hasSolution>
+
+    <pps:hasSolution>
+      <pps:Solution rdf:about="http://aprende.igualproject.org/protocols/?cont=protocol&amp;action=igualPlayer&amp;protId=116">
+        <pps:strategy>Ele usa um ciclo e uma funcão para gerar as séries de números de Fibonacci.</pps:strategy>
+        <pps:status>ejemplo resuelto</pps:status>
+        <pps:language>c++</pps:language>
+        <pps:hasSolver>
+          <pps:Solver rdf:about="http://aprende.igualproject.org/protocols/?cont=cuser&amp;action=view&amp;oper=Mod&amp;id=2">
+            <vcard:nickname>gina</vcard:nickname>
+            <foaf:nick>gina</foaf:nick>
+            <foaf:name>georgina salazar</foaf:name>
+            <foaf:mbox>gsp_gina@hotmail.com</foaf:mbox>
+            <vcard:Email rdf:resource="mailto: gsp_gina@hotmail.com"/>
+            <aiiso:Institution rdf:resource="http://www.uaa.mx/"/>
+          </pps:Solver>
+        </pps:hasSolver>
+
+      </pps:Solution>
+    </pps:hasSolution>
+
+  </pps:Problem>
+
+</rdf:RDF>
